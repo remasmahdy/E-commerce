@@ -33,6 +33,7 @@
     "@angular/router": "^20.3.0",
     "@angular/ssr": "^20.3.4",
     "@fortawesome/fontawesome-free": "^7.1.0",
+    "@netlify/angular-runtime": "^3.0.1",
     "@ngx-translate/core": "^17.0.0",
     "@ngx-translate/http-loader": "^16.0.0",
     "@tailwindcss/postcss": "^4.1.17",
