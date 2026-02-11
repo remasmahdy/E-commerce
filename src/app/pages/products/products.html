@@ -1,0 +1,49 @@
+<section class="py-5 mt-5">
+    <div class="container mx-auto my-5">
+    <h1 _ngcontent-xks-c10="" class="text-3xl font-bold text-green-700 mb-8 text-center">All Products</h1>    
+
+        <input type="text" [(ngModel)]="searchItem" 
+                class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-green-700 focus:border-green-700 block w-1/2 mx-auto px-3 py-2.5 shadow-xs placeholder:text-body" 
+                placeholder="{{'home.search'|translate}} ..." required />
+
+        <div class="parent grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 pt-2">
+            @for (prod of productList | search : searchItem | paginate: { itemsPerPage: 12, currentPage: p }; track prod._id) {
+            
+            <div class="card border border-green-700/50 rounded-md overflow-hidden shadow relative group">
+                
+                <button (click)="addToWish(prod._id)" 
+                        class="absolute top-2 right-2 z-10 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                    <i class="fa-solid fa-heart text-2xl cursor-pointer transition-colors"
+                    [class.text-red-600]="wishlistIds.includes(prod._id)"
+                    [class.text-gray-400]="!wishlistIds.includes(prod._id)">
+                    </i>
+                </button>
+
+                <div [routerLink]="['/details' , prod._id]">
+                    <div class="card-img">
+                        <img [src]="prod.imageCover" class="w-full h-[250px] object-contain" alt="">
+                    </div>
+                    <div class="card-body px-2 py-2">
+                        <h4 class="text-green-500 text-xs">{{prod.category.name | uppercase}}</h4>
+                        <h3 class="font-medium">{{prod.title.split( ' ', 2)}}</h3>
+                        <div class="flex justify-between items-center">
+                            <span>{{prod.price | currency}}</span>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-300"></i>
+                                <span class="text-gray-500">{{prod.ratingsAverage}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button (click)="addToCart(prod._id)" class="py-3 mb-2 px-4 text-white rounded-lg w-[70%] block mx-auto bg-green-700 cursor-pointer hover:bg-green-500">
+                    {{'home.addtocart'|translate}}
+                </button>
+            </div>
+            }
+        </div>
+
+        <div class="flex justify-center mt-8">
+            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,63 @@
+{
+"navbar": {
+    "home": "الرئيسية",
+    "cart": "سلة المشتريات",
+    "products": "المنتجات",
+    "categories": "التصنيفات",
+    "brands": "العلامات التجارية",
+    "signout": "تسجيل الخروج",
+    "login": "تسجيل الدخول",
+    "register": "إنشاء حساب",
+    "changeLan":"تغيير اللغه"
+    },
+"login": {
+    "loginnow": "سجّل الدخول الآن",
+    "login": "تسجيل الدخول",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "forgotpassword": "نسيت كلمة المرور"
+    },
+"home": {
+    "popularprod": "المنتجات الشائعة",
+    "popularcat": "الفئات الشائعة",
+    "addtocart": "أضف إلى السلة",
+    "search":"بحث"
+},
+"cart": {
+    "shopcart": "سلة التسوق",
+    "clearcart": "إفراغ السلة",
+    "totalcartprice": "إجمالي سعر السلة",
+    "title": "العنوان",
+    "price": "السعر",
+    "remove": "إزالة",
+    "payment": "الدفع",
+    "cartisempty": "السلة فارغة"
+},
+"checkout": {
+    "paynow": "ادفع الآن",
+    "details": "التفاصيل",
+    "phone": "رقم الهاتف",
+    "city": "المدينة",
+    "submit": "إرسال",
+    "enterdetails": "أدخل بياناتك",
+    "enterphone": "أدخل رقم هاتفك",
+    "entercity": "أدخل مدينتك"
+},
+"details": {
+    "proddetails": "تفاصيل المنتج",
+    "addtocart": "أضف إلى السلة"
+},
+"register": {
+    "registernow": "سجّل الآن",
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "repassword": "تأكيد كلمة المرور",
+    "phone": "رقم الهاتف"
+}
+
+
+
+
+
+}

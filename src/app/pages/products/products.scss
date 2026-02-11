@@ -1,0 +1,23 @@
+
+::ng-deep .ngx-pagination {
+margin-top: 2rem;
+display: flex;
+justify-content: center;
+
+.current {
+    background: #15803d !important; 
+    border-radius: 5px;
+    padding: 5px 12px;
+}
+
+
+a:hover {
+    background: #f0fdf4 !important; 
+    color: #15803d !important;
+    text-decoration: none;
+}
+.pagination-previous a::before, 
+.pagination-next a::after {
+    color: #15803d;
+}
+}

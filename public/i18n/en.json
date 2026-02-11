@@ -1,0 +1,60 @@
+{
+"navbar":{
+    "home": "home",
+    "cart":"cart",
+    "products":"products",
+    "categories":"categories",
+    "brands":"brands",
+
+    "signout":"signOut",
+    "login":"login",
+    "register":"register",
+    "changeLan":"change language"
+    },
+"login":{
+    "loginnow":"login now",
+    "login":"login",
+    "email":"email",
+    "password":"password",
+    "forgotpassword":"forget password"
+},
+"register":{
+    "registernow":"Register Now",
+    "name":"Name",
+    "email":"Email",
+    "password":"Password",
+    "repassword":"rePassword",
+    "phone":"Phone"
+
+},
+"home":{
+    "popularprod":"popular product",
+    "popularcat":"popular categories",
+    "addtocart":"add to cart",
+    "search":"search"
+},
+"cart":{
+    "shopcart":"Shop cart",
+    "clearcart":"clear cart",
+    "totalcartprice":"total cart price",
+    "title":"Title",
+    "price":"Price",
+    "remove":"remove",
+    "payment":"payment",
+    "cartisempty":"Cart is Empty"
+},
+"checkout":{
+    "paynow":"Pay Now",
+    "details":"Details",
+    "phone":"Phone",
+    "city":"City",
+    "submit":"Submit",
+    "enterdetails":"Enter Your Details",
+    "enterphone":"Enter Your Phone",
+    "entercity":"Enter Your City"
+},
+"details":{
+    "proddetails":"Product Details",
+    "addtocart":"add to cart"
+}
+}
